@@ -2,22 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NCL Qualification Verification</title>
+    <title>Certificate Verification — Newcastle College Ltd</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>NCL Qualification Verification</h1>
-        <p>Enter your certificate code and name below to verify your qualification.</p>
-        <form id="verifyForm">
-            <input type="text" id="certificateCode" placeholder="Certificate Code" required>
-            <br>
-            <input type="text" id="certificateName" placeholder="NAME" required>
-            <br>
-            <button type="submit">Verify</button>
-        </form>
-        <div id="result"></div>
-    </div>
+    <!-- Header Banner -->
+    <header class="main-header">
+        <div class="header-content">
+            <img src="images/logo.png" alt="Newcastle College Logo" class="header-logo">
+            <div>
+                <div class="header-title">Newcastle College Ltd — Certificate Verification</div>
+                <div class="header-subtitle">
+                    Verified provider — UK Register of Learning Providers (UKRLP) &amp; regulated by OFQUAL
+                </div>
+            </div>
+        </div>
+        <img src="images/ukrlp.png" alt="UKRLP" class="header-ukrlp">
+    </header>
+    <main>
+        <div class="card">
+            <h2>Verify Your Qualification</h2>
+            <p class="card-desc">
+                Scan the QR printed on the certificate (or enter the Qualification Number + Name) to verify authenticity.
+            </p>
+            <button class="scanner-btn">
+                <img src="images/scanner-icon.png" alt="" style="width:20px;vertical-align:middle;margin-right:8px;"> Start Scanner
+            </button>
+            <form id="verifyForm">
+                <label for="qualificationNumber">Qualification Number</label>
+                <input type="text" id="qualificationNumber" placeholder="e.g. NC-2025-001234" required>
+                <label for="candidateName">Candidate Name</label>
+                <input type="text" id="candidateName" placeholder="e.g. Jane Doe" required>
+                <button type="submit" class="verify-btn">Verify Certificate</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logos">
+            <img src="images/ncg.png" alt="NCG">
+            <img src="images/ofsted.png" alt="Ofsted">
+            <img src="images/tef.png" alt="TEF Silver">
+            <img src="images/skills-builder.png" alt="SkillsBuilder">
+            <img src="images/framework.png" alt="Framework">
+            <img src="images/neca.png" alt="North East Combined Authority">
+            <img src="images/gateshead.png" alt="Newcastle Gateshead">
+            <img src="images/proud-partner.png" alt="Proud Partner">
+            <img src="images/vmatrix.png" alt="Vmatrix">
+            <img src="images/weshine.png" alt="We Shine">
+        </div>
+        <div class="footer-copy">&copy; Newcastle College Ltd</div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
