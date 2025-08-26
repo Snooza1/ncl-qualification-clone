@@ -1,25 +1,29 @@
-// Certificate data (all are Level 3 Diploma in Business Administration (RQF))
+// Auto-fill and auto-verify if URL contains ?qualificationNumber=...&candidateName=...
+window.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const qn = params.get('qualificationNumber');
+    const name = params.get('candidateName');
+    if (qn && name) {
+        document.getElementById('qualificationNumber').value = qn;
+        document.getElementById('candidateName').value = name;
+        document.getElementById('verifyForm').requestSubmit();
+    }
+});
+
+// Example certificates data
 const certificates = [
     {
         name: "Jane Doe",
         qualificationNumber: "NC-602/9143/2A",
-        level: "Level 3 Diploma in Business Administration (RQF)",
-        awardedBy: "NCC (RQF by Ofqual)",
-        year: "2022-06-04T00:00:00.000Z"
+        // You can add other fields if needed for display
     },
     {
         name: "John Smith",
         qualificationNumber: "NC-2025-001234",
-        level: "Level 3 Diploma in Business Administration (RQF)",
-        awardedBy: "NCC (RQF by Ofqual)",
-        year: "2023-03-12T00:00:00.000Z"
     },
     {
         name: "Jane Doe",
         qualificationNumber: "NC-2025-003456",
-        level: "Level 3 Diploma in Business Administration (RQF)",
-        awardedBy: "NCC (RQF by Ofqual)",
-        year: "2024-07-10T00:00:00.000Z"
     }
     // Add more objects for other candidates!
 ];
@@ -27,39 +31,31 @@ const certificates = [
 // Verification logic
 document.getElementById('verifyForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    const code = document.getElementById('qualificationNumber').value.trim();
-    const name = document.getElementById('candidateName').value.trim();
+    const qualificationNumber = document.getElementById('qualificationNumber').value.trim();
+    const candidateName = document.getElementById('candidateName').value.trim();
     const resultDiv = document.getElementById('result');
-
-    const cert = certificates.find(c =>
-        c.qualificationNumber === code && c.name.toLowerCase() === name.toLowerCase()
+    const found = certificates.find(cert =>
+        cert.qualificationNumber.toLowerCase() === qualificationNumber.toLowerCase() &&
+        cert.name.toLowerCase() === candidateName.toLowerCase()
     );
-
-    if (cert) {
+    if (found) {
         resultDiv.innerHTML = `
-            <div class="verified-box">
-                <span style="font-size:1.5em;">✅</span> <strong>VERIFIED</strong><br><br>
-                <b>Name:</b> ${cert.name}<br>
-                <b>Qualification:</b> ${cert.qualificationNumber}<br>
-                <b>Level:</b> ${cert.level}<br>
-                <b>Awarded By:</b> ${cert.awardedBy}<br>
-                <b>Year:</b> ${cert.year}
+            <div style="background:#e6ffed;color:#228c5b;padding:18px 14px;border-radius:10px;border:2px solid #228c5b;margin-top:16px;font-weight:bold;font-size:1.1em;display:flex;align-items:center;">
+                <span style="font-size:1.5em;margin-right:10px;">✅</span>
+                VERIFIED: ${found.name} (${found.qualificationNumber})
             </div>
         `;
     } else {
         resultDiv.innerHTML = `
-            <div class="notfound-box">
-                <span style="font-size:1.5em;vertical-align:middle;">❌</span>
-                <strong style="color:#a61717;font-size:1.1em;"> NOT FOUND</strong><br>
-                <span style="color:#a61717;font-size:1em;">
-                    The qualification number or candidate name appears invalid or unregistered.
-                </span>
+            <div style="background:#ffe6e6;color:#c62222;padding:18px 14px;border-radius:10px;border:2px solid #c62222;margin-top:16px;font-weight:bold;font-size:1.1em;display:flex;align-items:center;">
+                <span style="font-size:1.5em;margin-right:10px;">❌</span>
+                NOT FOUND: The candidate and qualification number do not match our records.
             </div>
         `;
     }
 });
 
-// QR Code scanner activation using html5-qrcode
+// QR Scanner logic
 document.getElementById('startScannerBtn').addEventListener('click', function() {
     const qrReader = document.getElementById('qr-reader');
     qrReader.style.display = 'block';
@@ -74,13 +70,25 @@ document.getElementById('startScannerBtn').addEventListener('click', function() 
                 qrbox: 250
             },
             qrCodeMessage => {
+                // Expecting format: qualificationNumber|candidateName or just qualificationNumber
                 document.getElementById('qr-result').innerText = "QR Code detected: " + qrCodeMessage;
-                document.getElementById('qualificationNumber').value = qrCodeMessage;
+                let parts = qrCodeMessage.split('|');
+                if (parts.length === 2) {
+                    document.getElementById('qualificationNumber').value = parts[0].trim();
+                    document.getElementById('candidateName').value = parts[1].trim();
+                } else {
+                    // fallback if only one part
+                    document.getElementById('qualificationNumber').value = qrCodeMessage.trim();
+                }
                 html5QrCode.stop();
                 window.qrScannerStarted = false;
                 qrReader.style.display = 'none';
+                // Automatically submit the form after filling
+                document.getElementById('verifyForm').requestSubmit();
             },
-            errorMessage => {}
+            errorMessage => {
+                // Optional: display error
+            }
         ).catch(err => {
             document.getElementById('qr-result').innerText = "Unable to start scanning: " + err;
         });
