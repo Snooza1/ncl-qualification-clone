@@ -14,28 +14,37 @@ window.addEventListener('DOMContentLoaded', function() {
 const certificates = [
   {
     name: "Jane Doe",
-    qualification_number: "NC-123/4567/8A",
-    verified: true
+    qualificationNumber: "NC-123/4567/8A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-04T00:00:00.000Z"
   },
   {
     name: "Nadezhda Yankova Ihtimanska",
-    qualification_number: "NC-603/9243/2A",
-    verified: true
+    qualificationNumber: "NC-603/9243/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-04T00:00:00.000Z"
   },
   {
     name: "Petrunka Tihomirova Zavratchiyska",
-    qualification_number: "NC-605/9889/2A",
-    verified: true
+    qualificationNumber: "NC-605/9889/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-04T00:00:00.000Z"
   },
   {
     name: "Mariyan Sashov Kotsev",
-    qualification_number: "NC-611/8766/5A",
-    verified: true
+    qualificationNumber: "NC-611/8766/5A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-04T00:00:00.000Z"
   }
-];
-
-export default certificates;
-    // Add more certificates if needed
+  // Add more certificates if needed
 ];
 
 // Verification logic (always detailed view)
