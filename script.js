@@ -43,7 +43,16 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2022-08-28 T00:00:00.000Z"
+  },
+  {
+    name: "Rayna Velchova Veleva",
+    qualificationNumber: "NC-655/8956/4A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-05-17 T00:00:00.000Z"
   }
+
   // Add more certificates if needed
 ];
 
