@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Example certificates data with full details for Jane Doe
+// Certificates data with full details
 const certificates = [
     {
         name: "Jane Doe",
@@ -19,10 +19,10 @@ const certificates = [
         awardedBy: "NCC (RQF by Ofqual)",
         year: "2022-06-04T00:00:00.000Z"
     }
-    // Add other candidate objects similarly if needed
+    // Add more certificates if needed
 ];
 
-// Verification logic
+// Verification logic (always detailed view)
 document.getElementById('verifyForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const qualificationNumber = document.getElementById('qualificationNumber').value.trim();
@@ -54,7 +54,7 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
     }
 });
 
-// QR Scanner logic
+// QR Scanner logic (unchanged)
 document.getElementById('startScannerBtn').addEventListener('click', function() {
     const qrReader = document.getElementById('qr-reader');
     qrReader.style.display = 'block';
