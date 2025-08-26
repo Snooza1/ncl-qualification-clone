@@ -7,17 +7,30 @@
 </head>
 <body>
     <!-- Header Banner -->
-    <header class="main-header">
-        <div class="header-content">
-            <img src="images/logo.jpg" alt="Newcastle College Logo" class="header-logo">
-            <div>
-                <div class="header-title">Newcastle College Ltd — Certificate Verification</div>
-                <div class="header-subtitle">
-                    Verified provider — UK Register of Learning Providers (UKRLP) &amp; regulated by OFQUAL
-                </div>
-            </div>
+    <header> ... </header>
+    <main>
+        <div class="card">
+            <h2>Verify Your Qualification</h2>
+            <p class="card-desc"> ... </p>
+            <!-- Scanner Button and QR Reader -->
+            <button class="scanner-btn" id="startScannerBtn">
+                <span style="font-size:1.2em;vertical-align:middle;margin-right:5px;">📷</span>
+                Start Scanner
+            </button>
+            <div id="qr-reader" style="width:100%; max-width:350px; margin:14px auto; display:none;"></div>
+            <div id="qr-result" style="margin-top:10px; color:green;"></div>
+            <!-- Your existing form -->
+            <form id="verifyForm">
+                <!-- form fields -->
+            </form>
+            <div id="result"></div>
         </div>
-        <img src="images/ukrlp.png" alt="UKRLP" class="header-ukrlp">
+    </main>
+    <footer> ... </footer>
+    <!-- Add scripts at the bottom, before </body> -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="script.js"></script>
+</body>
     </header>
     <main>
         <div class="card">
