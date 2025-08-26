@@ -10,22 +10,16 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Example certificates data
+// Example certificates data with all required details for Jane Doe
 const certificates = [
     {
         name: "Jane Doe",
         qualificationNumber: "NC-602/9143/2A",
-        // You can add other fields if needed for display
+        level: "Level 3 Diploma in Business Administration (RQF)",
+        awardedBy: "NCC (RQF by Ofqual)",
+        year: "2022-06-04T00:00:00.000Z"
     },
-    {
-        name: "John Smith",
-        qualificationNumber: "NC-2025-001234",
-    },
-    {
-        name: "Jane Doe",
-        qualificationNumber: "NC-2025-003456",
-    }
-    // Add more objects for other candidates!
+    // Add other candidate objects similarly if needed
 ];
 
 // Verification logic
@@ -40,9 +34,14 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
     );
     if (found) {
         resultDiv.innerHTML = `
-            <div style="background:#e6ffed;color:#228c5b;padding:18px 14px;border-radius:10px;border:2px solid #228c5b;margin-top:16px;font-weight:bold;font-size:1.1em;display:flex;align-items:center;">
+            <div style="background:#e6ffed;color:#228c5b;padding:18px 14px;border-radius:10px;border:2px solid #228c5b;margin-top:16px;font-weight:bold;font-size:1.1em;">
                 <span style="font-size:1.5em;margin-right:10px;">✅</span>
-                VERIFIED: ${found.name} (${found.qualificationNumber})
+                VERIFIED<br>
+                <span><strong>Name:</strong> ${found.name}</span><br>
+                <span><strong>Qualification:</strong> ${found.qualificationNumber}</span><br>
+                <span><strong>Level:</strong> ${found.level}</span><br>
+                <span><strong>Awarded By:</strong> ${found.awardedBy}</span><br>
+                <span><strong>Year:</strong> ${found.year}</span>
             </div>
         `;
     } else {
