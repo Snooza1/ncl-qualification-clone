@@ -139,19 +139,19 @@ footer {
     padding: 34px 0 18px 0;
     margin-top: 44px;
 }
-.footer-logos {
+.footer-logos-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 26px;
+    align-items: center;
     margin-bottom: 12px;
 }
-.footer-logos img {
-    height: 34px;
-    background: #fff;
-    border-radius: 6px;
-    padding: 6px 10px;
-    box-shadow: 0 1px 5px rgba(36,107,203,0.12);
+.footer-logos-img {
+    max-width: 540px;
+    width: 75vw;
+    background: #253867;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(36,107,203,0.10);
+    padding: 18px 26px;
 }
 .footer-copy {
     text-align: center;
@@ -162,14 +162,8 @@ footer {
     letter-spacing: 0.04em;
 }
 @media (max-width: 600px) {
-    .card {
-        padding: 14px 6vw 18px 6vw;
-    }
-    .header-logo, .header-ukrlp {
-        height: 36px;
-    }
-    .footer-logos img {
-        height: 22px;
-        padding: 5px 6px;
+    .footer-logos-img {
+        max-width: 98vw;
+        padding: 10px 6px;
     }
 }
