@@ -92,41 +92,26 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
 });
 
 // QR Scanner logic (unchanged)
-document.getElementById('startScannerBtn').addEventListener('click', function() {
-    const qrReader = document.getElementById('qr-reader');
-    qrReader.style.display = 'block';
-    document.getElementById('qr-result').innerText = '';
-    if (!window.qrScannerStarted) {
-        window.qrScannerStarted = true;
-        const html5QrCode = new Html5Qrcode("qr-reader");
-        html5QrCode.start(
-            { facingMode: "environment" },
-            {
-                fps: 10,
-                qrbox: 250
-            },
-            qrCodeMessage => {
-                // Expecting format: qualificationNumber|candidateName or just qualificationNumber
-                document.getElementById('qr-result').innerText = "QR Code detected: " + qrCodeMessage;
-                let parts = qrCodeMessage.split('|');
-                if (parts.length === 2) {
-                    document.getElementById('qualificationNumber').value = parts[0].trim();
-                    document.getElementById('candidateName').value = parts[1].trim();
-                } else {
-                    // fallback if only one part
-                    document.getElementById('qualificationNumber').value = qrCodeMessage.trim();
-                }
-                html5QrCode.stop();
-                window.qrScannerStarted = false;
-                qrReader.style.display = 'none';
-                // Automatically submit the form after filling
-                document.getElementById('verifyForm').requestSubmit();
-            },
-            errorMessage => {
-                // Optional: display error
-            }
-        ).catch(err => {
-            document.getElementById('qr-result').innerText = "Unable to start scanning: " + err;
-        });
+qrCodeMessage => {
+    // If the QR code is a URL, redirect to it
+    if (qrCodeMessage.startsWith('http://') || qrCodeMessage.startsWith('https://')) {
+        window.location.href = qrCodeMessage;
+        return; // Stop further processing
     }
-});
+
+    // Otherwise, handle as qualificationNumber|candidateName or just qualificationNumber
+    document.getElementById('qr-result').innerText = "QR Code detected: " + qrCodeMessage;
+    let parts = qrCodeMessage.split('|');
+    if (parts.length === 2) {
+        document.getElementById('qualificationNumber').value = parts[0].trim();
+        document.getElementById('candidateName').value = parts[1].trim();
+    } else {
+        // fallback if only one part
+        document.getElementById('qualificationNumber').value = qrCodeMessage.trim();
+    }
+    html5QrCode.stop();
+    window.qrScannerStarted = false;
+    qrReader.style.display = 'none';
+    // Automatically submit the form after filling
+    document.getElementById('verifyForm').requestSubmit();
+},
