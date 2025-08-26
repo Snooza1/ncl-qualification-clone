@@ -2,61 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Certificate Verification — Newcastle College Ltd</title>
+    <title>Newcastle College Ltd — Certificate Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Banner -->
-    <header> ... </header>
+    <header class="main-header">
+        <div class="header-content">
+            <img src="images/logo.jpg" alt="Newcastle College Logo" class="header-logo">
+            <div>
+                <div class="header-title">Newcastle College Ltd — Certificate Verification</div>
+                <div class="header-subtitle">
+                    Verified provider — UK Register of Learning Providers (UKRLP) &amp; regulated by OFQUAL
+                </div>
+            </div>
+        </div>
+        <img src="images/ukrlp.png" alt="UKRLP" class="header-ukrlp">
+    </header>
     <main>
         <div class="card">
-            <h2>Verify Your Qualification</h2>
-            <p class="card-desc"> ... </p>
+            <!-- Language tabs (visual only) -->
+            <div style="display:flex;align-items:center;margin-bottom:8px;">
+                <span style="font-weight:bold;color:#2268c6;border-bottom:2px solid #2268c6;padding-bottom:2px;margin-right:16px;">İNGİLİZCE</span>
+                <span style="color:#2268c6;margin-right:16px;">BULGARCA</span>
+                <span style="color:#2268c6;">...</span>
+                <span style="margin-left:auto;color:#2268c6;">Tamamlandı</span>
+            </div>
             <!-- Scanner Button and QR Reader -->
             <button class="scanner-btn" id="startScannerBtn">
                 <span style="font-size:1.2em;vertical-align:middle;margin-right:5px;">📷</span>
                 Start Scanner
             </button>
-            <div id="qr-reader" style="width:100%; max-width:350px; margin:14px auto; display:none;"></div>
-            <div id="qr-result" style="margin-top:10px; color:green;"></div>
-            <!-- Your existing form -->
-            <form id="verifyForm">
-                <!-- form fields -->
+            <div id="qr-reader" style="width:100%;max-width:350px;margin:14px auto;display:none;"></div>
+            <div id="qr-result" style="margin-top:10px;color:green;"></div>
+            <!-- Verification Form -->
+            <form id="verifyForm" style="margin-top:16px;">
+                <label for="qualificationNumber" style="display:block;margin-bottom:4px;font-weight:500;color:#2268c6;">Qualification Number</label>
+                <input type="text" id="qualificationNumber" name="qualificationNumber" placeholder="NC-602/9143/2A" style="width:100%;padding:9px 12px;border-radius:8px;border:2px solid #2268c6;font-size:1em;margin-bottom:12px;">
+                <label for="candidateName" style="display:block;margin-bottom:4px;font-weight:500;color:#2268c6;">Candidate Name</label>
+                <input type="text" id="candidateName" name="candidateName" placeholder="Kalinka Tihomirova Kenderova" style="width:100%;padding:9px 12px;border-radius:8px;border:2px solid #2268c6;font-size:1em;margin-bottom:16px;">
+                <button type="submit" class="verify-btn" style="width:100%;background:#2268c6;color:#fff;font-weight:bold;font-size:1.1em;padding:12px 0;border-radius:10px;border:none;box-shadow:0 2px 8px rgba(36,107,203,0.07);margin-bottom:8px;">
+                    Verify Certificate
+                </button>
             </form>
             <div id="result"></div>
         </div>
     </main>
-    <footer> ... </footer>
-    <!-- Add scripts at the bottom, before </body> -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logos-wrapper">
+            <img src="images/footer-logos.png" alt="Partner Logos" class="footer-logos-img">
+        </div>
+        <div class="footer-copy">&copy; Newcastle College Ltd</div>
+    </footer>
+    <!-- Script imports -->
     <script src="https://unpkg.com/html5-qrcode"></script>
     <script src="script.js"></script>
 </body>
-    </header>
-    <main>
-        <div class="card">
-            <h2>Verify Your Qualification</h2>
-            <p class="card-desc">
-                Scan the QR printed on the certificate (or enter the Qualification Number + Name) to verify authenticity.
-            </p>
-          <button class="scanner-btn" id="startScannerBtn">
-    <span style="font-size:1.2em;vertical-align:middle;margin-right:5px;">📷</span>
-    <img src="images/scanner-icon.png" alt="" style="width:20px;vertical-align:middle;margin-right:8px;">
-    Start Scanner
-</button>
-<video id="cameraPreview" style="display:none;width:100%;margin-top:12px;border-radius:10px;" autoplay></video>
-            <form id="verifyForm">
-                <label for="qualificationNumber">Qualification Number</label>
-                <input type="text" id="qualificationNumber" placeholder="e.g. NC-2025-001234" required>
-                <label for="candidateName">Candidate Name</label>
-                <input type="text" id="candidateName" placeholder="e.g. Jane Doe" required>
-                <button type="submit" class="verify-btn">Verify Certificate</button>
-            </form>
-            <div id="result"></div>
-        </div>
-    </main>
-   <footer>
-    <div class="footer-logos-wrapper">
-        <img src="images/footer.png" alt="Partner Logos" class="footer-logos-img">
-    </div>
-    <div class="footer-copy">&copy; Newcastle College Ltd</div>
-</footer>
+</html>
