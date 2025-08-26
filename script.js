@@ -53,30 +53,42 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
     const qualificationNumber = document.getElementById('qualificationNumber').value.trim();
     const candidateName = document.getElementById('candidateName').value.trim();
     const resultDiv = document.getElementById('result');
-    const found = certificates.find(cert =>
-        cert.qualificationNumber.toLowerCase() === qualificationNumber.toLowerCase() &&
-        cert.name.toLowerCase() === candidateName.toLowerCase()
-    );
-    if (found) {
-        resultDiv.innerHTML = `
-            <div style="background:#e6ffed;color:#228c5b;padding:18px 14px;border-radius:10px;border:2px solid #228c5b;margin-top:16px;font-weight:bold;font-size:1.1em;">
-                <span style="font-size:1.5em;margin-right:10px;">✅</span>
-                VERIFIED<br>
-                <span><strong>Name:</strong> ${found.name}</span><br>
-                <span><strong>Qualification:</strong> ${found.qualificationNumber}</span><br>
-                <span><strong>Level:</strong> ${found.level}</span><br>
-                <span><strong>Awarded By:</strong> ${found.awardedBy}</span><br>
-                <span><strong>Year:</strong> ${found.year}</span>
-            </div>
-        `;
-    } else {
-        resultDiv.innerHTML = `
-            <div style="background:#ffe6e6;color:#c62222;padding:18px 14px;border-radius:10px;border:2px solid #c62222;margin-top:16px;font-weight:bold;font-size:1.1em;display:flex;align-items:center;">
-                <span style="font-size:1.5em;margin-right:10px;">❌</span>
-                NOT FOUND: The candidate and qualification number do not match our records.
-            </div>
-        `;
-    }
+
+    // Show loading message
+    resultDiv.innerHTML = `
+        <div style="background:#e6f0ff;color:#2255c6;padding:18px 14px;border-radius:10px;border:2px solid #2255c6;margin-top:16px;font-weight:bold;font-size:1.1em;display:flex;align-items:center;">
+            <span style="font-size:1.5em;margin-right:10px;">⏳</span>
+            Checking certificate details...
+        </div>
+    `;
+
+    // Wait 2-4 seconds before showing the result
+    setTimeout(() => {
+        const found = certificates.find(cert =>
+            cert.qualificationNumber.toLowerCase() === qualificationNumber.toLowerCase() &&
+            cert.name.toLowerCase() === candidateName.toLowerCase()
+        );
+        if (found) {
+            resultDiv.innerHTML = `
+                <div style="background:#e6ffed;color:#228c5b;padding:18px 14px;border-radius:10px;border:2px solid #228c5b;margin-top:16px;font-weight:bold;font-size:1.1em;">
+                    <span style="font-size:1.5em;margin-right:10px;">✅</span>
+                    VERIFIED<br>
+                    <span><strong>Name:</strong> ${found.name}</span><br>
+                    <span><strong>Qualification:</strong> ${found.qualificationNumber}</span><br>
+                    <span><strong>Level:</strong> ${found.level}</span><br>
+                    <span><strong>Awarded By:</strong> ${found.awardedBy}</span><br>
+                    <span><strong>Year:</strong> ${found.year}</span>
+                </div>
+            `;
+        } else {
+            resultDiv.innerHTML = `
+                <div style="background:#ffe6e6;color:#c62222;padding:18px 14px;border-radius:10px;border:2px solid #c62222;margin-top:16px;font-weight:bold;font-size:1.1em;display:flex;align-items:center;">
+                    <span style="font-size:1.5em;margin-right:10px;">❌</span>
+                    NOT FOUND: The candidate and qualification number do not match our records.
+                </div>
+            `;
+        }
+    }, Math.floor(Math.random() * 2000) + 2000); // 2000ms-4000ms = 2-4 seconds
 });
 
 // QR Scanner logic (unchanged)
