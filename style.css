@@ -146,12 +146,22 @@ footer {
     margin-bottom: 12px;
 }
 .footer-logos-img {
+    width: 100%;
     max-width: 540px;
-    width: 75vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     background: #253867;
     border-radius: 14px;
     box-shadow: 0 2px 16px rgba(36,107,203,0.10);
     padding: 18px 26px;
+    object-fit: contain;
+}
+@media (max-width: 600px) {
+    .footer-logos-img {
+        max-width: 98vw;
+        padding: 10px 6px;
+    }
 }
 .footer-copy {
     text-align: center;
@@ -160,10 +170,4 @@ footer {
     font-weight: 400;
     opacity: 0.90;
     letter-spacing: 0.04em;
-}
-@media (max-width: 600px) {
-    .footer-logos-img {
-        max-width: 98vw;
-        padding: 10px 6px;
-    }
 }
