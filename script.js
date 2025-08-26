@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Example certificates data with all required details for Jane Doe
+// Example certificates data with full details for Jane Doe
 const certificates = [
     {
         name: "Jane Doe",
@@ -18,7 +18,7 @@ const certificates = [
         level: "Level 3 Diploma in Business Administration (RQF)",
         awardedBy: "NCC (RQF by Ofqual)",
         year: "2022-06-04T00:00:00.000Z"
-    },
+    }
     // Add other candidate objects similarly if needed
 ];
 
