@@ -1,7 +1,7 @@
 // Certificate data (all are Level 3 Diploma in Business Administration (RQF))
 const certificates = [
     {
-        name: "Kalinka Tihomirova Kenderova",
+        name: "Jane Doe",
         qualificationNumber: "NC-602/9143/2A",
         level: "Level 3 Diploma in Business Administration (RQF)",
         awardedBy: "NCC (RQF by Ofqual)",
@@ -37,7 +37,7 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
 
     if (cert) {
         resultDiv.innerHTML = `
-            <div style="background:#e5f8e5;color:#174617;border-radius:12px;border:2px solid #b6e6b6;padding:18px;margin-top:12px;">
+            <div class="verified-box">
                 <span style="font-size:1.5em;">✅</span> <strong>VERIFIED</strong><br><br>
                 <b>Name:</b> ${cert.name}<br>
                 <b>Qualification:</b> ${cert.qualificationNumber}<br>
@@ -48,9 +48,12 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
         `;
     } else {
         resultDiv.innerHTML = `
-            <div style="background:#ffe5e5;color:#a61717;border-radius:12px;border:2px solid #e6b6b6;padding:18px;margin-top:12px;">
-                <span style="font-size:1.5em;">❌</span> <strong>NOT VERIFIED</strong><br>
-                No matching certificate found for the provided details.
+            <div class="notfound-box">
+                <span style="font-size:1.5em;vertical-align:middle;">❌</span>
+                <strong style="color:#a61717;font-size:1.1em;"> NOT FOUND</strong><br>
+                <span style="color:#a61717;font-size:1em;">
+                    The qualification number or candidate name appears invalid or unregistered.
+                </span>
             </div>
         `;
     }
