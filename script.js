@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Certificates data with full details
+// Certificates data with full details (fixed commas and year formatting)
 const certificates = [
   {
     name: "Jane Doe",
@@ -18,7 +18,7 @@ const certificates = [
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-07-04 T00:00:00.000Z"
+    year: "2022-07-04T00:00:00.000Z"
   },
   {
     name: "Nadezhda Yankova Ihtimanska",
@@ -26,7 +26,7 @@ const certificates = [
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-06-05 T00:00:00.000Z"
+    year: "2022-06-05T00:00:00.000Z"
   },
   {
     name: "Petrunka Tihomirova Zavratchiyska",
@@ -34,7 +34,7 @@ const certificates = [
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-07-15 T00:00:00.000Z"
+    year: "2022-07-15T00:00:00.000Z"
   },
   {
     name: "Mariyan Sashov Kotsev",
@@ -42,7 +42,7 @@ const certificates = [
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-08-28 T00:00:00.000Z"
+    year: "2022-08-28T00:00:00.000Z"
   },
   {
     name: "Rayna Velchova Veleva",
@@ -50,25 +50,24 @@ const certificates = [
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-05-17 T00:00:00.000Z"
-  }
+    year: "2022-05-17T00:00:00.000Z"
+  },
   {
     name: "Borislav Goshov Iliev",
     qualificationNumber: "NC-455/7556/6A",
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-09-17 T00:00:00.000Z"
-  }
-{
+    year: "2022-09-17T00:00:00.000Z"
+  },
+  {
     name: "Stoyan Ivanov Kolev",
     qualificationNumber: "NC-675/9556/2A",
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-08-12 T00:00:00.000Z"
+    year: "2022-08-12T00:00:00.000Z"
   }
-
   // Add more certificates if needed
 ];
 
