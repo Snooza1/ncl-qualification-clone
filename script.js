@@ -52,6 +52,22 @@ const certificates = [
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2022-05-17 T00:00:00.000Z"
   }
+  {
+    name: "Borislav Goshov Iliev",
+    qualificationNumber: "NC-455/7556/6A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-09-17 T00:00:00.000Z"
+  }
+{
+    name: "Stoyan Ivanov Kolev",
+    qualificationNumber: "NC-675/9556/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-08-12 T00:00:00.000Z"
+  }
 
   // Add more certificates if needed
 ];
