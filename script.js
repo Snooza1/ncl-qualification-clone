@@ -67,6 +67,14 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2022-08-12T00:00:00.000Z"
+  },
+  {
+    name: "Gapoor Mohssimi",
+    qualificationNumber: "NC-775/4346/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-22T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
