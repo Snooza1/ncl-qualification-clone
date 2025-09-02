@@ -75,6 +75,14 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2022-06-22T00:00:00.000Z"
+  },
+  {
+    name: "Zaprin Nikolaev Dimitrov",
+    qualificationNumber: "NC-601/6065/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-21T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
