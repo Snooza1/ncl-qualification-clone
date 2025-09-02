@@ -83,6 +83,14 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-08-21T00:00:00.000Z"
+  },
+  {
+    name: "Anka Metodieva Borisova",
+    qualificationNumber: "NC-501/2755/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-05-15T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
