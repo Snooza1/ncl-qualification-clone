@@ -107,6 +107,14 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2022-06-20T00:00:00.000Z"
+  },
+  {
+    name: "Nadka Mitkova Mihaylova",
+    qualificationNumber: "NC-202/6663/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-06-15T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
