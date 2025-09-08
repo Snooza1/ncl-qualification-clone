@@ -91,6 +91,22 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-05-15T00:00:00.000Z"
+  },
+  {
+    name: "Shukryu Fikri Shyukryu",
+    qualificationNumber: "NC-701/9995/5A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-06-22T00:00:00.000Z"
+  },
+  {
+    name: "Tsvetanka Mitkova Naydenova",
+    qualificationNumber: "NC-105/8763/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-20T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
