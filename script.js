@@ -93,7 +93,7 @@ const certificates = [
     year: "2023-05-15T00:00:00.000Z"
   },
   {
-    name: "Shukryu Fikri Shyukryu",
+    name: "Shyukryu Fikri Shyukryu",
     qualificationNumber: "NC-701/9995/5A",
     verified: true,
     level: "Level 3 Diploma in Business Administration (RQF)",
