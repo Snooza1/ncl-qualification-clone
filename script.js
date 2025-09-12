@@ -115,6 +115,54 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-06-15T00:00:00.000Z"
+  },
+  {
+    name: "Anton Zapryankov Atanasov",
+    qualificationNumber: "NC-119/4553/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2024-05-15T00:00:00.000Z"
+  },
+  {
+    name: "Natasha Rozova Gadzheva",
+    qualificationNumber: "NC-122/2239/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2024-04-22T00:00:00.000Z"
+  },
+  {
+    name: "Melekber Hyusein Ali",
+    qualificationNumber: "NC-203/1001/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-06-16T00:00:00.000Z"
+  },
+  {
+    name: "Tunka Botyova Popova",
+    qualificationNumber: "NC-511/9549/5A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-15T00:00:00.000Z"
+  },
+  {
+    name: "Vizhdan Alish Ali",
+    qualificationNumber: "NC-402/1422/4A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-07-10T00:00:00.000Z"
+  },
+  {
+    name: "Yanko Krumov Asenov",
+    qualificationNumber: "NC-502/2980/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-01-25T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
