@@ -163,6 +163,30 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-01-25T00:00:00.000Z"
+  },
+  {
+    name: "Yanko Iliev Yankov",
+    qualificationNumber: "NC-399/3677/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2020-05-15T00:00:00.000Z"
+  },
+  {
+    name: "Iskra Plamenova Stoyanova",
+    qualificationNumber: "NC-235/6223/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-05-01T00:00:00.000Z"
+  },
+  {
+    name: "Boyko Todorov Todorov",
+    qualificationNumber: "NC-446/1599/4A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-13T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
