@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Certificates data with full details (fixed commas and year formatting)
+// Certificates data with full details (de-duplicated, fixed commas and year formatting)
 const certificates = [
   {
     name: "Jane Doe",
@@ -189,102 +189,112 @@ const certificates = [
     year: "2023-08-13T00:00:00.000Z"
   },
   {
-    "name": "Asen Ivanov Stoyanov",
-    "qualificationNumber": "NC-663/7962/3A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2022-05-15T00:00:00Z"
+    name: "Asen Ivanov Stoyanov",
+    qualificationNumber: "NC-663/7962/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-05-15T00:00:00.000Z"
   },
   {
-    "name": "Daniela Delcheva Ilieva",
-    "qualificationNumber": "NC-695/2781/3A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-06-13T00:00:00Z"
+    name: "Daniela Delcheva Ilieva",
+    qualificationNumber: "NC-695/2781/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-06-13T00:00:00.000Z"
   },
   {
-    "name": "Sashka Andreeva Yankova",
-    "qualificationNumber": "NC-228/1622/7A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2022-08-23T00:00:00Z"
+    name: "Sashka Andreeva Yankova",
+    qualificationNumber: "NC-228/1622/7A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-08-23T00:00:00.000Z"
   },
   {
-    "name": "Silvana Lyubenova Angelova",
-    "qualificationNumber": "NC-708/6014/3A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2021-10-14T00:00:00Z"
-  }{
-    "name": "Strahil Yankov Yankov",
-    "qualificationNumber": "NC-521/3641/7A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-07-22T00:00:00.000Z"
+    name: "Silvana Lyubenova Angelova",
+    qualificationNumber: "NC-708/6014/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2021-10-14T00:00:00.000Z"
   },
   {
-    "name": "Sashka Andreeva Yankova",
-    "qualificationNumber": "NC-312/8842/9A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-08-03T00:00:00.000Z"
+    name: "Strahil Yankov Yankov",
+    qualificationNumber: "NC-521/3641/7A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-07-22T00:00:00.000Z"
   },
   {
-    "name": "Daniela Delcheva Ilieva",
-    "qualificationNumber": "NC-233/9943/3A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-07-30T00:00:00.000Z"
+    name: "Sashka Andreeva Yankova",
+    qualificationNumber: "NC-312/8842/9A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-03T00:00:00.000Z"
   },
   {
-    "name": "Silvana Lyubenova Angelova",
-    "qualificationNumber": "NC-154/5412/6A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-08-11T00:00:00.000Z"
+    name: "Daniela Delcheva Ilieva",
+    qualificationNumber: "NC-233/9943/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-07-30T00:00:00.000Z"
   },
   {
-    "name": "Asen Ivanov Stoyanov",
-    "qualificationNumber": "NC-818/1177/5A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-06-29T00:00:00.000Z"
+    name: "Silvana Lyubenova Angelova",
+    qualificationNumber: "NC-154/5412/6A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-11T00:00:00.000Z"
   },
   {
-    "name": "Zhivko Naydenov Kostov",
-    "qualificationNumber": "NC-266/6254/4A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-07-13T00:00:00.000Z"
+    name: "Asen Ivanov Stoyanov",
+    qualificationNumber: "NC-818/1177/5A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-06-29T00:00:00.000Z"
   },
   {
-    "name": "Tereza Sashova Bogdanova",
-    "qualificationNumber": "NC-785/2883/3A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-09-01T00:00:00.000Z"
+    name: "Zhivko Naydenov Kostov",
+    qualificationNumber: "NC-266/6254/4A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-07-13T00:00:00.000Z"
   },
   {
-    "name": "Stanislav Nikolaev Shushnev",
-    "qualificationNumber": "NC-399/4937/8A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-08-23T00:00:00.000Z"
+    name: "Tereza Sashova Bogdanova",
+    qualificationNumber: "NC-785/2883/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-09-01T00:00:00.000Z"
+  },
+  {
+    name: "Stanislav Nikolaev Shushnev",
+    qualificationNumber: "NC-399/4937/8A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-23T00:00:00.000Z"
   }
   // Add more certificates if needed
 ];
+
+// Remove duplicate names (keep only first occurrence)
+const seen = new Set();
+const uniqueCertificates = certificates.filter(c => {
+  const key = (c.name + "|" + c.qualificationNumber).toLowerCase();
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
 
 // Verification logic (always detailed view)
 document.getElementById('verifyForm').addEventListener('submit', function(e) {
@@ -303,7 +313,7 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
 
     // Wait 2-4 seconds before showing the result
     setTimeout(() => {
-        const found = certificates.find(cert =>
+        const found = uniqueCertificates.find(cert =>
             cert.qualificationNumber.toLowerCase() === qualificationNumber.toLowerCase() &&
             cert.name.toLowerCase() === candidateName.toLowerCase()
         );
