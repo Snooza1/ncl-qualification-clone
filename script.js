@@ -292,7 +292,32 @@ const certificates = [
     "level": "Level 3 Diploma in Business Administration (RQF)",
     "awardedBy": "NCC (RQF by Ofqual)",
     "year": "2022-09-25T00:00:00.000Z"
+  },
+  {
+    "name": "Stoyan Ivanov Kolev",
+    "qualificationNumber": "NC-164/9845/6A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2023-04-19T00:00:00.000Z"
+  },
+  {
+    "name": "Vasil Asenov Stoyanov",
+    "qualificationNumber": "NC-451/3331/1A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2022-10-05T00:00:00.000Z"
+  },
+  {
+    "name": "Borislav Goshov Iliev",
+    "qualificationNumber": "NC-728/1197/8A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2021-12-21T00:00:00.000Z"
   }
+
 ]
 
   // Add more certificates if needed
