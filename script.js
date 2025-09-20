@@ -11,6 +11,8 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Certificates data with full details (de-duplicated, fixed commas and year formatting)
+// FIXED: No nested arrays; all certificates are direct objects in a single array
+
 const certificates = [
   {
     name: "Jane Doe",
@@ -252,73 +254,71 @@ const certificates = [
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-08-03T00:00:00.000Z"
   },
-[
   {
-    "name": "Iliya Ivanov Minchev",
-    "qualificationNumber": "NC-344/7182/1A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-06-17T00:00:00.000Z"
+    name: "Iliya Ivanov Minchev",
+    qualificationNumber: "NC-344/7182/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-06-17T00:00:00.000Z"
   },
   {
-    "name": "Deyana Kolyova Mincheva",
-    "qualificationNumber": "NC-782/3399/2A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2022-11-01T00:00:00.000Z"
+    name: "Deyana Kolyova Mincheva",
+    qualificationNumber: "NC-782/3399/2A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-11-01T00:00:00.000Z"
   },
   {
-    "name": "Dora Ilieva Ilieva",
-    "qualificationNumber": "NC-165/2278/3A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2021-10-18T00:00:00.000Z"
+    name: "Dora Ilieva Ilieva",
+    qualificationNumber: "NC-165/2278/3A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2021-10-18T00:00:00.000Z"
   },
   {
-    "name": "Vanya Emilieva Pareva",
-    "qualificationNumber": "NC-557/9410/5A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-08-04T00:00:00.000Z"
+    name: "Vanya Emilieva Pareva",
+    qualificationNumber: "NC-557/9410/5A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-08-04T00:00:00.000Z"
   },
   {
-    "name": "Mihail Yanev Petrov",
-    "qualificationNumber": "NC-899/3157/4A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2022-09-25T00:00:00.000Z"
+    name: "Mihail Yanev Petrov",
+    qualificationNumber: "NC-899/3157/4A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-09-25T00:00:00.000Z"
   },
   {
-    "name": "Stoyan Ivanov Kolev",
-    "qualificationNumber": "NC-164/9845/6A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2023-04-19T00:00:00.000Z"
+    name: "Stoyan Ivanov Kolev",
+    qualificationNumber: "NC-164/9845/6A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-04-19T00:00:00.000Z"
   },
   {
-    "name": "Vasil Asenov Stoyanov",
-    "qualificationNumber": "NC-451/3331/1A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2022-10-05T00:00:00.000Z"
+    name: "Vasil Asenov Stoyanov",
+    qualificationNumber: "NC-451/3331/1A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2022-10-05T00:00:00.000Z"
   },
   {
-    "name": "Borislav Goshov Iliev",
-    "qualificationNumber": "NC-728/1197/8A",
-    "verified": true,
-    "level": "Level 3 Diploma in Business Administration (RQF)",
-    "awardedBy": "NCC (RQF by Ofqual)",
-    "year": "2021-12-21T00:00:00.000Z"
+    name: "Borislav Goshov Iliev",
+    qualificationNumber: "NC-728/1197/8A",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2021-12-21T00:00:00.000Z"
   }
-
-]
+];
 
   // Add more certificates if needed
 ];
