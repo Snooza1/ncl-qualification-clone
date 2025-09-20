@@ -187,6 +187,69 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-08-13T00:00:00.000Z"
+  },{
+    "name": "Asen Ivanov Stoyanov",
+    "qualificationNumber": "NC-663/7962/3A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2022-05-15T00:00:00Z"
+  },
+  {
+    "name": "Daniela Delcheva Ilieva",
+    "qualificationNumber": "NC-695/2781/3A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2023-06-13T00:00:00Z"
+  },
+  {
+    "name": "Sashka Andreeva Yankova",
+    "qualificationNumber": "NC-228/1622/7A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2022-08-23T00:00:00Z"
+  },
+  {
+    "name": "Silvana Lyubenova Angelova",
+    "qualificationNumber": "NC-708/6014/3A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2021-10-14T00:00:00Z"
+  },
+  {
+    "name": "Stanislav Nikolaev Shushnev",
+    "qualificationNumber": "NC-152/1631/2A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2021-06-11T00:00:00Z"
+  },
+  {
+    "name": "Strahil Yankov Yankov",
+    "qualificationNumber": "NC-721/6364/2A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2021-04-14T00:00:00Z"
+  },
+  {
+    "name": "Tereza Sashova Bogdanova",
+    "qualificationNumber": "NC-294/2115/4A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2022-07-08T00:00:00Z"
+  },
+  {
+    "name": "Zhivko Naydenov Kostov",
+    "qualificationNumber": "NC-256/1534/6A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2023-04-17T00:00:00Z"
   }
   // Add more certificates if needed
 ];
