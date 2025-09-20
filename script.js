@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Certificates data with full details (de-duplicated, fixed commas and year formatting)
-// FIXED: No nested arrays; all certificates are direct objects in a single array
+// All entries are now direct objects in a single array (no nested arrays)
 
 const certificates = [
   {
@@ -319,7 +319,6 @@ const certificates = [
     year: "2021-12-21T00:00:00.000Z"
   }
 ];
-
   // Add more certificates if needed
 ];
 
