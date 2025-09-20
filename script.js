@@ -189,14 +189,6 @@ const certificates = [
     year: "2023-08-13T00:00:00.000Z"
   },
   {
-    name: "Asen Ivanov Stoyanov",
-    qualificationNumber: "NC-663/7962/3A",
-    verified: true,
-    level: "Level 3 Diploma in Business Administration (RQF)",
-    awardedBy: "NCC (RQF by Ofqual)",
-    year: "2022-05-15T00:00:00.000Z"
-  },
-  {
     name: "Strahil Yankov Yankov",
     qualificationNumber: "NC-521/3641/7A",
     verified: true,
