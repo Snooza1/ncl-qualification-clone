@@ -197,14 +197,6 @@ const certificates = [
     year: "2022-05-15T00:00:00.000Z"
   },
   {
-    name: "Daniela Delcheva Ilieva",
-    qualificationNumber: "NC-695/2781/3A",
-    verified: true,
-    level: "Level 3 Diploma in Business Administration (RQF)",
-    awardedBy: "NCC (RQF by Ofqual)",
-    year: "2023-06-13T00:00:00.000Z"
-  },
-  {
     name: "Strahil Yankov Yankov",
     qualificationNumber: "NC-521/3641/7A",
     verified: true,
