@@ -251,7 +251,50 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-08-03T00:00:00.000Z"
+  },
+[
+  {
+    "name": "Iliya Ivanov Minchev",
+    "qualificationNumber": "NC-344/7182/1A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2023-06-17T00:00:00.000Z"
+  },
+  {
+    "name": "Deyana Kolyova Mincheva",
+    "qualificationNumber": "NC-782/3399/2A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2022-11-01T00:00:00.000Z"
+  },
+  {
+    "name": "Dora Ilieva Ilieva",
+    "qualificationNumber": "NC-165/2278/3A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2021-10-18T00:00:00.000Z"
+  },
+  {
+    "name": "Vanya Emilieva Pareva",
+    "qualificationNumber": "NC-557/9410/5A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2023-08-04T00:00:00.000Z"
+  },
+  {
+    "name": "Mihail Yanev Petrov",
+    "qualificationNumber": "NC-899/3157/4A",
+    "verified": true,
+    "level": "Level 3 Diploma in Business Administration (RQF)",
+    "awardedBy": "NCC (RQF by Ofqual)",
+    "year": "2022-09-25T00:00:00.000Z"
   }
+]
+
   // Add more certificates if needed
 ];
 
