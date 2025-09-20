@@ -10,9 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Certificates data with full details (de-duplicated, fixed commas and year formatting)
-// All entries are now direct objects in a single array (no nested arrays)
-
+// Certificates data with full details (deduplicated, flat array, fixed commas and year formatting)
 const certificates = [
   {
     name: "Jane Doe",
@@ -319,8 +317,6 @@ const certificates = [
     year: "2021-12-21T00:00:00.000Z"
   }
 ];
-  // Add more certificates if needed
-];
 
 // Remove duplicate names (keep only first occurrence)
 const seen = new Set();
@@ -349,8 +345,8 @@ document.getElementById('verifyForm').addEventListener('submit', function(e) {
     // Wait 2-4 seconds before showing the result
     setTimeout(() => {
         const found = uniqueCertificates.find(cert =>
-            cert.qualificationNumber.toLowerCase() === qualificationNumber.toLowerCase() &&
-            cert.name.toLowerCase() === candidateName.toLowerCase()
+            cert.qualificationNumber.trim().toLowerCase() === qualificationNumber.toLowerCase() &&
+            cert.name.trim().toLowerCase() === candidateName.toLowerCase()
         );
         if (found) {
             resultDiv.innerHTML = `
