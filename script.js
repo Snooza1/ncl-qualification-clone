@@ -302,6 +302,24 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2021-12-21T00:00:00.000Z"
+  },
+
+  // --- NEW ENTRIES ADDED (matching Website 1 format) ---
+  {
+    name: "Ivelina Angelova Yankova",
+    qualificationNumber: "NC-412/8790/3B",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-05-14T00:00:00.000Z"
+  },
+  {
+    name: "Mariana Sirenarska",
+    qualificationNumber: "NC-417/2055/6C",
+    verified: true,
+    level: "Level 3 Diploma in Business Administration (RQF)",
+    awardedBy: "NCC (RQF by Ofqual)",
+    year: "2023-06-20T00:00:00.000Z"
   }
 ];
 
