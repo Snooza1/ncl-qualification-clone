@@ -320,7 +320,23 @@ const certificates = [
     level: "Level 3 Diploma in Business Administration (RQF)",
     awardedBy: "NCC (RQF by Ofqual)",
     year: "2023-06-20T00:00:00.000Z"
-  }
+  },
+    {
+  name: "Sefer Verhatov Hadzhiev",
+  qualificationNumber: "NC-634/4821/4A",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2023-04-11T00:00:00.000Z"
+},
+{
+  name: "Aksinia Iliyazova Hadzhieva",
+  qualificationNumber: "NC-418/7623/9B",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2023-07-05T00:00:00.000Z"
+}
 ];
 
 // Remove duplicate names (keep only first occurrence)
