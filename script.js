@@ -344,6 +344,14 @@ const certificates = [
   level: "Level 3 Diploma in Business Administration (RQF)",
   awardedBy: "NCC (RQF by Ofqual)",
   year: "2023-06-12T00:00:00.000Z"
+},
+{
+  name: "Galya Nikolova Naydenova",
+  qualificationNumber: "NC-604/2973/3Y",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2022-03-17T00:00:00.000Z"
 }
 ];
 
