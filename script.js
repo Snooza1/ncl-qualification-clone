@@ -336,6 +336,14 @@ const certificates = [
   level: "Level 3 Diploma in Business Administration (RQF)",
   awardedBy: "NCC (RQF by Ofqual)",
   year: "2023-07-05T00:00:00.000Z"
+},
+{
+  name: "Yanko Hristov Zavratchiyski",
+  qualificationNumber: "NC-536/7011/5A",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2023-06-12T00:00:00.000Z"
 }
 ];
 
