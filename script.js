@@ -352,6 +352,14 @@ const certificates = [
   level: "Level 3 Diploma in Business Administration (RQF)",
   awardedBy: "NCC (RQF by Ofqual)",
   year: "2022-03-17T00:00:00.000Z"
+},
+{
+  name: "Mehmed Mehmedov Smailov",
+  qualificationNumber: "NC-548/2134/2D",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2023-06-30T00:00:00.000Z"
 }
 ];
 
