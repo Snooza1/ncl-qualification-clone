@@ -360,6 +360,22 @@ const certificates = [
   level: "Level 3 Diploma in Business Administration (RQF)",
   awardedBy: "NCC (RQF by Ofqual)",
   year: "2023-06-30T00:00:00.000Z"
+},
+{
+  name: "Shukri Salihov Karakashev",
+  qualificationNumber: "NC-582/4310/7C",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2022-11-02T00:00:00.000Z"
+},
+{
+  name: "Miroslav Evtimov Bobolev",
+  qualificationNumber: "NC-612/3087/4B",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2023-02-14T00:00:00.000Z"
 }
 ];
 
