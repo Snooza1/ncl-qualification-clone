@@ -376,6 +376,22 @@ const certificates = [
   level: "Level 3 Diploma in Business Administration (RQF)",
   awardedBy: "NCC (RQF by Ofqual)",
   year: "2023-02-14T00:00:00.000Z"
+},
+{
+  name: "Teodora Tatyanova Dimitrova",
+  qualificationNumber: "NC-743/5627/2B",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2023-11-08T00:00:00.000Z"
+},
+{
+  name: "Valentin Sebaydinov Aliev",
+  qualificationNumber: "NC-892/6734/7D",
+  verified: true,
+  level: "Level 3 Diploma in Business Administration (RQF)",
+  awardedBy: "NCC (RQF by Ofqual)",
+  year: "2024-02-27T00:00:00.000Z"
 }
 ];
 
